@@ -1,0 +1,32 @@
+{
+  "name": "eclypsium-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "localbuild": "npm install --prefix ../eclypsium-client && npm run --prefix ../eclypsium-client build && cp -r ../eclypsium-client/build ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacalvi/eclypsium-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dacalvi/eclypsium-server/issues"
+  },
+  "homepage": "https://github.com/dacalvi/eclypsium-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
