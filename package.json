@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "localbuild": "npm install --prefix ../eclypsium-client && npm run --prefix ../eclypsium-client build && cp -r ../eclypsium-client/build ./public"
+    "localbuild": "npm install --prefix ../eclypsium-client && npm run --prefix ../eclypsium-client build && cp -rf ../eclypsium-client/build ./public"
   },
   "repository": {
     "type": "git",
