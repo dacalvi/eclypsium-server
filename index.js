@@ -7,11 +7,7 @@ import { PORT } from "./config.js";
 
 const app = express();
 const server = http.createServer(app);
-const io = new SocketServer(server, {
-  cors: {
-    origin: "http://localhost:3000",
-  },
-});
+const io = new SocketServer(server);
 
 app.use(cors());
 app.use(morgan("dev"));
